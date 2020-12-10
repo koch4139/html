@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    html, body{margin: 0%; padding: 0%; height: 100%;}
+    .header{width: 100%; height: 15%; background-color: yellow; float:left}
+    .nav{width: 15%; height: 70%; background-color: red; float:left}
+    .section{width: 70%; height: 70%; background-color: orange; float:left}
+    .aside{width: 15%; height: 70%; background-color: blue; float:left}
+    .footer{width: 100%; height: 15%; background-color: pink; float:left}
+
+    .버튼{background-color: green;}
+  </style>
+  <title>회 원 가 입</title>
+</head>
+<body>
+  <h3>회 원 가 입</h3>
+  <form >
+    <fieldset>  
+      <label>아이디<br> <input type="text" size="50" value=""></label><br>
+      <label>비밀번호<br> <input type="text" size="50" value=""></label><br>
+      <label>비밀번호확인<br> <input type="text" size="50" value=""></label><br>
+      <label>전화번호<br> <input type="text" size="50" value=""></label><br>
+      <label>별칭<br> <input type="text" size="50" value=""></label><br> 
+      <label>지역<br> <select name="지역">
+        <option value="지역">==선 택==
+          <option value="지역">서울
+          <option value="지역">부산
+          <option value="지역">울산
+          </option> </select></label> <br>
+       <label>성별</label> <br>
+       <input type="radio" name="성별" value="1" checked> 남자
+       <input type="radio" name="성별" value="2"> 여자<br>
+       <label>취미</label><br>
+       <input type="checkbox" value="1"> 독서
+       <input type="checkbox" value="2"> 음악감상
+       <input type="checkbox" value="3"> 운동
+       <input type="checkbox" value="4"> 게임<br>
+       <label>생년월일</label><br>
+        <input type="date" value="2020-10-21"><br>
+       <button class="버튼">회원가입</button> 
+      </fieldset> 
+    </form>
+  
+    
+</body>
+</html>

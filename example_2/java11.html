@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html,body{height: 100%; margin: 0;}
+    body{background-color: #ccc; color: #fff; text-align: center;}
+    body{border: 1px solid red;}
+    nav{margin: 1%; height: 10%;}
+    article,aside{margin: 1%;height: 10%;}
+    header,footer{margin: 1%; height: 10%;}
+    header,nav,article,footer{background-color: #666;}
+    section{background-color: #999;float: left; width: 75%; height:60% ; margin-left: 1%; }
+    article{background-color: skyblue ;float: right; width: 20%; height: 20%; margin-left: 1%;}
+    aside{background-color: skyblue;float: right; height: 40%; width: 20%; margin-left: 1%;}
+    
+    div.clearfix{height: 20%;}
+    .clearfix{
+      clear:both;
+    } 
+    footer.bottom{height: 100%; background-color: palevioletred;}
+
+  </style>
+</head>
+<body>
+    <header>header</header>
+    <nav>nav</nav>
+    <section>
+      section
+      <header>header</header>
+      <section>section</section>
+      <footer>footer</footer>
+    </section>
+    <article>article</article>
+    <aside>aside</aside>
+    <div class="clearfix">
+    <footer class="bottom">footer</footer>
+  </div>
+</body>
+</html>

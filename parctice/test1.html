@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* div{background-color: red;} */
+    #content> h1{color: blue;}
+    nav li:active{color: red;}
+    nav li:hover{background-color: orange;}
+    input:disabled{background-color: blue;}
+    li:nth-child(2){background-color: yellow;}
+    li:nth-child(2n+1){background-color: skyblue;}
+    li:first-child{background-color: red;}
+    li:last-child{background-color: springgreen;}
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li>home</li>
+      <li>profile</li>
+      <li>contact us</li>
+    </ul>
+  </nav>
+  <input type="text" disabled="disabled">
+  <div >안녕하세요</div>
+  <div >안녕하세요</div>
+  <div >안녕하세요</div>
+  <span>안녕하세요</span>
+  <span>안녕하세요</span>
+  <span>안녕하세요</span>
+  <div id="content">
+      <h1>컨텐츠 h1</h1>
+      <div id="warp">
+        <h1>자손 테스트</h1>
+        <div>
+          <h1>후손인가요?</h1>
+        </div>
+      </div>
+  </div>
+</body>
+</html>

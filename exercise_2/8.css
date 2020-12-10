@@ -1,0 +1,11 @@
+body{
+  background-color: yellow;
+}
+
+p{text-align: center;
+  
+}
+p:nth-last-of-type(2) span{
+  background-color: blue;
+}
+

@@ -1,0 +1,79 @@
+*{margin: 0; padding: 0;}
+
+/*common*/
+.container{
+  width: 600px; margin: 0 auto;
+  text-align: center;
+
+}
+
+/* uppermost*/
+.uppermost{
+  background-color: #c9bc1f;
+}
+.container-um{
+  background-color:#ffff8b;
+}
+
+/* heder*/
+header{
+  background-color: #c97b63;
+}
+.container-h{
+  background-color: #ffddc1;
+  background-image: url(https://cdn.pixabay.com/photo/2020/09/11/00/11/landscape-5561687__340.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100px;
+}
+/* nav*/
+nav{
+  background-color:#5c007a;
+}
+.container-n{
+  background-color:#c158dc;
+}
+/* main*/
+main{
+  background-color: #005cb2;
+}
+.container-m{
+  background-color: #6ab7ff;
+  outline: 3px solid red;
+  overflow: hidden;
+}
+.container-m section{
+  float: left;
+}
+.container-m section.s1{
+  background-color: #ff77a9;
+  width: 50%; 
+}
+.container-m section.s2{
+  background-color: #ffcccb;
+  width: 30%;
+}
+.container-m section.s3{
+  background-color: #69e2ff;
+  width: 20%;
+}
+/* footer menu*/
+.footermenu{
+  background-color:#00867d;
+}
+.container-fm{background-color: #82e9de;}
+/* footer */
+footer{
+  background-color: #9f0000;
+}
+.container-f{
+  background-color:#ff7543;
+}
+/*배경색제거*/
+header,nav,main{
+  background-color: transparent;
+}
+/*clearfix*/
+.clearfix{
+  clear: both;/*float의 왼쪽, 오른쪽흐름을 차단*/
+}
