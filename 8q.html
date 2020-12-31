@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h3>아이템을 클릭하면 1.3배 크기로</h3>
+  <hr>
+  <p>여름 방학 때 하고 싶은 것들</p>
+  <ul id="ul">
+    <li>자전거로 대한민국 일주</li>
+    <li>책 100권 읽기</li>
+    <li>철인 3종 경기 준비</li>
+    <li>자바스크립트 정복</li>
+  </ul>
+  <script>
+    let $list = document.querySelectorAll("li") // 변수타입 $변수명 =(대입연산자) html문서의 ("li") 값을 가진걸 찾아서 컬렉션화 시켜 반환 
+    Array.from($list).forEach(function(list){   // 배열객체의 from함수를 각각  모든배열마다 매개변수에 자동으로 할당.
+      
+      list.addEventListener("click",(eve) => { // list(li)주소를 가진애들한테 클릭했을때 함수(eve)가 실행      '(람다식 표현)' 
+        let $liarray = document.getElementsByTagName('li'); // liarray변수에 html문서의 ('li')값을 가진 애들 찾아서 컬렉션화 시킨다.
+        for(let i=0; i<$liarray.length; i++){ // for문은 고급과정 패스
+          if($liarray[i].style.fontSize != 1+'em')
+          {$liarray[i].style.fontSize = 1+'em';}
+        }
+        eve.target.style.fontSize = 1.3+'em'; // 넘겨 받은 매개변수의 이벤트 발생위치에 스타일의 글자크기 1.3em
+            
+      })
+    })
+  </script>
+</body>
+</html>

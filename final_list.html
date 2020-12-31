@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h3>나만의 버킷리스트</h3>
+  <hr>
+  <div>여름방학때 하고싶은 것들</div>
+  <div>
+    <ol type="a"  id="listdiv">
+  
+  </ol></div>
+  <input type="text" style="width: 300px;" value="" id="text">
+  <button id="submit">등록</button>
+  <script>
+   let $text = document.getElementById("text");
+   let $submit = document.getElementById("submit");
+   let $ol = document.getElementById("listdiv");
+   let $flag = true;
+   $submit.addEventListener("click",()=>{
+     if($flag){
+     let $newli = document.createElement("li");
+     let $del = document.createElement("button");
+     let $re = document.createElement("button");
+     $del.setAttribute("style","margin-left: 50px; margin-bottom: 10px");
+     $del.onclick = eraser;
+     $del.innerHTML = "삭제";
+     $re.onclick = replace;
+     $re.innerHTML= "수정";
+     $newli.innerHTML = $text.value;
+     $newli.appendChild($del);
+     $newli.appendChild($re);
+
+     $ol.appendChild($newli);}
+    
+   })
+
+   function eraser(e){
+    let x = e.target.parentElement;
+    $ol.removeChild(x);
+   }
+   
+   function replace(e){
+    $flag = false;
+    $text.value = "수정할문구를 입력해주세요";
+    
+    
+    $submit.addEventListener("click",()=>{
+      if(!$flag){
+        let x = e.target.parentElement
+      let $del = document.createElement("button");
+     let $re = document.createElement("button");
+     $del.setAttribute("style","margin-left: 50px; margin-bottom: 10px");
+     $del.onclick = eraser;
+     $del.innerHTML = "삭제";
+     $re.onclick = replace;
+     $re.innerHTML= "수정";
+      x.innerHTML = $text.value;
+      x.appendChild($del);
+      x.appendChild($re);
+      $flag = true;}
+    })
+   }
+  </script>
+</body>
+</html>
